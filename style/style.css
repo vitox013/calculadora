@@ -1,1 +1,143 @@
 @charset "UTF-8";
+
+* {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 100vh;
+    font-size: 2rem;
+    background-color: #243552;
+    gap: 13rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 30vw;
+    height: 50vh;
+    padding: 20px;
+    gap: 20px;
+    box-shadow: 0px 0px 2px 0px black;
+    background-color: #CAD2E0;
+}
+
+.resultado {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    height: 20%;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10px;
+    background-color: #E1EAFA;
+}
+
+.resultado:hover {
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+.operacoes {
+    display: flex;
+    gap: 5%;
+    height: 20%;
+}
+
+.operacoes div {
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    display: flex;
+    background-color: #e1effa;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.operacoes div:hover {
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+.subcontainer {
+    display: flex;
+    height: 100%;
+}
+
+.ladoEsquerdo{
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    width: 79%;
+    height: 100%;
+}
+
+.ladoDireito {
+    width: 21%;
+}
+.numbers {
+    display: flex;
+    gap:6.3%;
+    height: 20%;  
+}
+
+.numbers div {
+    display: flex;
+    background-color: #E1EAFA;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+    width: 26.4%;
+    align-items: center;
+    justify-content: center;
+}
+
+.numbers div:hover {
+    box-shadow: 0px 0px 2px 0px black;
+}
+.igual {
+    display: flex;
+    flex-direction: column;
+    background-color: #6797EB;
+    color: white;
+    height: 95%;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.315);
+}
+.igual:hover {
+    background-color: #46669E;
+}
+
+footer {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+}
+
+footer a{
+    color:#E1EAFA ;
+    text-decoration: none ;
+}
+
+footer a:hover{
+    text-decoration: underline ;
+}
+
+@media screen and (max-width: 1000px){
+    
+    .container {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-height: 500px){
+    .container {
+        height: 80vh;
+    }
+    body {
+        gap: 0;
+    }
+
+    footer{
+        height: 10px;
+    }
+}

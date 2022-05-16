@@ -140,12 +140,40 @@ footer a:hover{
 @media screen and (max-height: 500px){
     .container {
         height: 80vh;
+        padding-bottom: 0px;
+        margin-top: 0px;
     }
     body {
-        gap: 0;
+        gap: 0px;
+        height: 95vh;
+    }
+
+    #resultado {
+        font-size: 1em;
+    }
+    .ladoEsquerdo{
+        gap: 2%;
+    }
+
+    .ladoDireito{
+        height: 87%;
+    }
+
+    .container {
+        gap: 2px;
     }
 
     footer{
-        height: 10px;
+        height: 5px;
+    }
+}
+
+@media screen and (max-height: 300px){
+
+    body {
+        font-size: 1em;
+    }
+    #resultado {
+        font-size: 1em;
     }
 }

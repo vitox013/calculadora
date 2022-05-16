@@ -23,18 +23,18 @@ body {
     height: 50vh;
     padding: 20px;
     gap: 20px;
-    box-shadow: 0px 0px 2px 0px black;
+    box-shadow: 0px 0px 10px 0px black;
     background-color: #CAD2E0;
 }
 
 .resultado {
-    display: flex;
     border: 1px solid rgba(0, 0, 0, 0.315);
     height: 20%;
-    justify-content: end;
-    align-items: center;
+    text-align: end;
     padding-right: 10px;
+    padding-top: 10px;
     background-color: #E1EAFA;
+    overflow: auto;
 }
 
 .resultado:hover {
@@ -58,6 +58,10 @@ body {
 
 .operacoes div:hover {
     box-shadow: 0px 0px 2px 0px black;
+}
+
+.operacoes div:active {
+    font-weight: bold;
 }
 
 .subcontainer {
@@ -89,6 +93,10 @@ body {
     width: 26.4%;
     align-items: center;
     justify-content: center;
+}
+
+.numbers div:active {
+    font-weight: bold;
 }
 
 .numbers div:hover {
